@@ -3,40 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Belajar HTML - Live Editor</title>
+  <title>Belajar HTML Berlevel</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Belajar HTML dengan Live Coding</h1>
-    <p>Tulis kode HTML-mu di editor dan lihat hasilnya langsung!</p>
+    <h1>Belajar HTML Interaktif</h1>
+    <p>Level saat ini: <span id="level">1</span></p>
   </header>
-
   <main>
-    <section class="tutorial">
-      <h2>Contoh Kode HTML</h2>
-      <pre>
-&lt;h1&gt;Halo Dunia!&lt;/h1&gt;
-&lt;p&gt;Ini adalah paragraf pertama saya.&lt;/p&gt;
+    <div class="section">
+      <h2>Instruksi</h2>
+      <p id="instruction">Buat sebuah judul dengan tag `<h1>` yang berbeda dari contoh ini.</p>
+      <pre id="example">
+&lt;h1&gt;Contoh Judul&lt;/h1&gt;
+&lt;p&gt;Ini adalah contoh paragraf.&lt;/p&gt;
       </pre>
-    </section>
-
-    <section class="editor">
-      <h2>Coba Kode HTML-mu</h2>
-      <textarea id="code-editor" placeholder="Tulis kode HTML di sini..."></textarea>
-      <button id="run-code">Jalankan</button>
-    </section>
-
-    <section class="preview">
-      <h2>Hasilnya:</h2>
-      <iframe id="live-preview"></iframe>
-    </section>
+    </div>
+    <div class="section">
+      <h2>Editor</h2>
+      <textarea id="editor" placeholder="Tulis kode Anda di sini..."></textarea>
+      <button id="submit">Periksa Kode</button>
+    </div>
+    <div class="section">
+      <h2>Hasil</h2>
+      <iframe id="preview"></iframe>
+      <p id="feedback"></p>
+    </div>
   </main>
-
-  <footer>
-    <p>&copy; 2024 Belajar HTML</p>
-  </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
